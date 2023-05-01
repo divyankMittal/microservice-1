@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Home Page </title>
+</head>
+
+<body>
+    <p> This is the home page that displays:<br> 1. Form to add person along with his favourite sport
+        <br> 2. option to get the collection of documents in db (mongoDb).<br>3.Delete the document for specific 
+        person from the db.   
+    </p>
+    <div class="Input">
+       <form action="http://127.0.0.1/submit" method="POST">
+
+          <label for="fname">Name:</label><br>
+          <input type="text" id="fname" name="fname" placeholder="xyz" ><br>
+          <label for="lname">Sport:</label><br>
+          <input type="text" id="lname" name="lname" placeholder="abc"> <br>
+          <input type="submit" value="submit">
+       </form>
+    <div>
+    <br>
+    <br>
+    <br>
+    <div class="get">
+       <form action="http://127.0.0.1/getdata" method="GET">
+            <input type="submit" value="get all JSON documents ">
+        </form>  
+    <div>
+    <br>
+    <br> 
+    <br>
+    <div class="delete">
+        <form action="http://127.0.0.1/deletedata" method="POST">
+            <label for="fname">Name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="xyz" ><br>
+            <input type="submit" value="Delete">
+        </form>  
+    <div>
+</body>   
+</html>
+   
